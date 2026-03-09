@@ -2,7 +2,7 @@
 
 Aplicación Full Stack desarrollada como prueba técnica. Incluye consumo de API externa (Chuck Norris) y CRUD completo de usuarios.
 
-## 🏗️ Arquitectura
+## Arquitectura
 
 ```
 ├── backend/          # Spring Boot + Java 21
@@ -21,7 +21,7 @@ Aplicación Full Stack desarrollada como prueba técnica. Incluye consumo de API
 └── docker-compose.frontend.yml     # Solo frontend
 ```
 
-## 🚀 Despliegue con Docker Swarm (completo)
+## Despliegue con Docker Swarm (completo)
 
 ```bash
 # 1. Construir imágenes
@@ -47,15 +47,15 @@ docker service logs app_stack_backend
 ```bash
 docker compose -f docker-compose.backend.yml up --build
 ```
-Disponible en: http://localhost:8080
+Disponible en: http://localhost:8081
 
 ### Solo Frontend
 ```bash
 docker compose -f docker-compose.frontend.yml up --build
 ```
-Disponible en: http://localhost:80
+Disponible en: http://localhost:3000
 
-## 💻 Desarrollo local (sin Docker)
+## Desarrollo local (sin Docker)
 
 ### Backend
 ```bash
@@ -86,10 +86,10 @@ npm start
 |--------|-----------------|--------------------------|
 | GET    | /external/joke  | Obtener chiste aleatorio |
 
-## 📖 Swagger UI
-Disponible en: http://localhost:8080/swagger-ui.html
+## Swagger UI
+Disponible en: http://localhost:8081/swagger-ui.html
 
-## 🐳 Variables de entorno
+## Variables de entorno
 
 Copiar `.env.example` a `.env` y ajustar valores:
 
@@ -102,9 +102,9 @@ cp .env.example .env
 | DB_NAME              | appdb       | Nombre de la base        |
 | DB_USER              | postgres    | Usuario PostgreSQL        |
 | DB_PASSWORD          | postgres    | Contraseña PostgreSQL     |
-| REACT_APP_API_URL    | http://localhost:8080 | URL del backend |
+| REACT_APP_API_URL    | http://localhost:8081 | URL del backend |
 
-## ✅ Checklist
+## Checklist
 
 - [x] React (JavaScript) en el frontend
 - [x] Spring Boot (Java 21) en el backend
